@@ -42,3 +42,17 @@ figure {
 .content-section {
   padding: 0 5vi;
 }
+
+.header {
+  padding-block-start: 10%;
+}
+
+.header__title {
+  margin-block-end: 40px;
+  font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+}
+
+.content__title {
+  margin: 7% 0 2.5%;
+  font-size: 30px;
+}
