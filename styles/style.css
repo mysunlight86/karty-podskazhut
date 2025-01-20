@@ -3,7 +3,7 @@
   --text-color: #312a4e;
   --accent-color: #ffab6b;
   --main-font: Raleway;
-  --accent-font: 'STIX Two Text';
+  --accent-font: "STIX Two Text";
 }
 
 *,
@@ -90,7 +90,7 @@ figure {
 }
 
 .content__list li::before {
-  content: '';
+  content: "";
   position: absolute;
   margin-block-start: -7.5px;
   background-image: url(../images/marker-light.svg);
@@ -101,4 +101,14 @@ figure {
   block-size: 15px;
   inset-block-start: 50%;
   inset-inline-start: -25px;
+}
+
+.content__text-block_type_first-lettered
+  .content__paragraph:first-of-type::first-letter {
+  display: inline-block;
+  margin-inline-end: 1px;
+  padding: 0 4px;
+  font-weight: 700;
+  font-size: 30px;
+  background-color: var(--accent-color);
 }
