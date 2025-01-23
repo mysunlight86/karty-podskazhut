@@ -90,7 +90,7 @@ button:disabled {
   font-family: inherit;
   font-size: 18px;
   background-color: transparent;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .header__theme-button:hover {
@@ -105,9 +105,9 @@ button:disabled {
   content: '';
   position: absolute;
   z-index: -1;
+  background-color: var(--accent-color);
   inline-size: calc(100% + 8px);
   block-size: 0.5ch;
-  background-color: var(--accent-color);
   inset-block-end: 0.3ch;
   inset-inline-start: -4px;
 }
@@ -223,4 +223,15 @@ button:disabled {
   block-size: 0.5ch;
   inset-block-end: 0.3ch;
   inset-inline-start: -4px;
+}
+
+.footer {
+  margin-block-start: 10%;
+  border-block-start: 1px solid currentColor;
+  padding: 2.5%;
+  text-align: center;
+}
+
+.footer__copyright {
+  font-size: 18px;
 }
